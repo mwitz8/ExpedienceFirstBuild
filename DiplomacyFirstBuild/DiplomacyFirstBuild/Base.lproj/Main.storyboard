@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MyX-gx-yHt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="vGj-WR-3Y0">
+            <objects>
+                <viewController id="MyX-gx-yHt" customClass="GameViewController" customModule="TestingWebServer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Fsv-y2-BVL" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="first" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vh-nP-RpB">
+                                <rect key="frame" x="192" y="94" width="30" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbC-ho-4ao">
+                                <rect key="frame" x="179" y="165" width="56.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="third" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKR-6X-hHA">
+                                <rect key="frame" x="189" y="236" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iph-v8-mXs">
+                                <rect key="frame" x="192" y="433" width="30" height="30"/>
+                                <state key="normal" title="GO"/>
+                                <connections>
+                                    <action selector="go:" destination="MyX-gx-yHt" eventType="touchUpInside" id="2XC-fM-NfG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tna-MG-hDF">
+                                <rect key="frame" x="78" y="525" width="56" height="30"/>
+                                <state key="normal" title="England"/>
+                                <connections>
+                                    <action selector="england:" destination="MyX-gx-yHt" eventType="touchUpInside" id="Rrn-XN-A3a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYA-A5-qAF">
+                                <rect key="frame" x="149" y="525" width="100" height="30"/>
+                                <state key="normal" title="The North Sea"/>
+                                <connections>
+                                    <action selector="TheNorthSea:" destination="MyX-gx-yHt" eventType="touchUpInside" id="0cr-d5-MEN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr2-fa-vJC">
+                                <rect key="frame" x="264" y="525" width="52" height="30"/>
+                                <state key="normal" title="Norway"/>
+                                <connections>
+                                    <action selector="Norway:" destination="MyX-gx-yHt" eventType="touchUpInside" id="g9T-he-636"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc3-qn-Udj">
+                                <rect key="frame" x="331" y="525" width="55" height="30"/>
+                                <state key="normal" title="Sweden"/>
+                                <connections>
+                                    <action selector="Sweden:" destination="MyX-gx-yHt" eventType="touchUpInside" id="Jeu-Qr-5qY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V9-YZ-w63">
+                                <rect key="frame" x="275" y="570" width="30" height="30"/>
+                                <state key="normal" title="Kiel"/>
+                                <connections>
+                                    <action selector="Kiel:" destination="MyX-gx-yHt" eventType="touchUpInside" id="8r3-4k-ZQf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d35-Qa-hZY">
+                                <rect key="frame" x="168.5" y="632" width="77" height="30"/>
+                                <state key="normal" title="Input Move"/>
+                                <connections>
+                                    <action selector="InputMove:" destination="MyX-gx-yHt" eventType="touchUpInside" id="3Id-ly-hA7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="V8P-1k-nwY" firstAttribute="bottom" secondItem="d35-Qa-hZY" secondAttribute="bottom" constant="200" id="1JN-kZ-XRW"/>
+                            <constraint firstItem="Qc3-qn-Udj" firstAttribute="leading" secondItem="hr2-fa-vJC" secondAttribute="trailing" constant="15" id="384-vr-shA"/>
+                            <constraint firstItem="hr2-fa-vJC" firstAttribute="leading" secondItem="eYA-A5-qAF" secondAttribute="trailing" constant="15" id="7jJ-od-F7m"/>
+                            <constraint firstItem="fKR-6X-hHA" firstAttribute="top" secondItem="QbC-ho-4ao" secondAttribute="bottom" constant="50" id="94h-f1-E4a"/>
+                            <constraint firstItem="d35-Qa-hZY" firstAttribute="centerX" secondItem="Fsv-y2-BVL" secondAttribute="centerX" id="Ank-GE-xTV"/>
+                            <constraint firstItem="hr2-fa-vJC" firstAttribute="top" secondItem="V8P-1k-nwY" secondAttribute="top" constant="481" id="EPl-Zm-zON"/>
+                            <constraint firstItem="V8P-1k-nwY" firstAttribute="trailing" secondItem="0V9-YZ-w63" secondAttribute="trailing" constant="109" id="Rpe-Vv-Kma"/>
+                            <constraint firstItem="fKR-6X-hHA" firstAttribute="centerX" secondItem="Fsv-y2-BVL" secondAttribute="centerX" id="S3T-eL-cv0"/>
+                            <constraint firstItem="QbC-ho-4ao" firstAttribute="top" secondItem="6Vh-nP-RpB" secondAttribute="bottom" constant="50" id="U4b-Ft-Hzr"/>
+                            <constraint firstItem="6Vh-nP-RpB" firstAttribute="centerX" secondItem="Fsv-y2-BVL" secondAttribute="centerX" id="ZRD-3o-zGe"/>
+                            <constraint firstItem="Qc3-qn-Udj" firstAttribute="top" secondItem="V8P-1k-nwY" secondAttribute="top" constant="481" id="ZzI-kT-a5d"/>
+                            <constraint firstItem="Tna-MG-hDF" firstAttribute="top" secondItem="V8P-1k-nwY" secondAttribute="top" constant="481" id="eO2-xb-pbE"/>
+                            <constraint firstItem="QbC-ho-4ao" firstAttribute="centerX" secondItem="Fsv-y2-BVL" secondAttribute="centerX" id="iTs-vU-DvB"/>
+                            <constraint firstItem="Iph-v8-mXs" firstAttribute="centerY" secondItem="Fsv-y2-BVL" secondAttribute="centerY" id="kYp-Hx-iKj"/>
+                            <constraint firstItem="eYA-A5-qAF" firstAttribute="leading" secondItem="Tna-MG-hDF" secondAttribute="trailing" constant="15" id="kqb-mh-0Yh"/>
+                            <constraint firstItem="eYA-A5-qAF" firstAttribute="top" secondItem="Iph-v8-mXs" secondAttribute="bottom" constant="62" id="pa2-6k-6m0"/>
+                            <constraint firstItem="Tna-MG-hDF" firstAttribute="leading" secondItem="V8P-1k-nwY" secondAttribute="leading" constant="78" id="qou-hZ-jhR"/>
+                            <constraint firstItem="6Vh-nP-RpB" firstAttribute="top" secondItem="V8P-1k-nwY" secondAttribute="top" constant="50" id="sce-Qc-Z7U"/>
+                            <constraint firstItem="0V9-YZ-w63" firstAttribute="top" secondItem="hr2-fa-vJC" secondAttribute="bottom" constant="15" id="vD6-z1-NWW"/>
+                            <constraint firstItem="Iph-v8-mXs" firstAttribute="centerX" secondItem="Fsv-y2-BVL" secondAttribute="centerX" id="yP6-gq-zbr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V8P-1k-nwY"/>
+                    </view>
+                    <connections>
+                        <outlet property="first" destination="6Vh-nP-RpB" id="VNh-KG-GVH"/>
+                        <outlet property="second" destination="QbC-ho-4ao" id="wTc-YY-zzA"/>
+                        <outlet property="third" destination="fKR-6X-hHA" id="3Pr-iK-lge"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bep-Tc-atW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="393" y="150"/>
+        </scene>
+    </scenes>
+</document>
